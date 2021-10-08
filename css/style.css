@@ -1,0 +1,151 @@
+:root{
+	--hair-color:#424b54;
+	--skin-color:#f0beaf;
+	}
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    background : #ebd8d0;
+    color : black;
+}
+
+.human{
+	background-color: var(--skin-color);
+    width: 220px;
+    height: 220px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(50%);
+    margin: 20% 29%;
+	}
+	
+	.hair{
+	background-color:var(--hair-color);
+	width:120px;
+	height:180px;
+	position:absolute;
+	top:40px;
+	left:50%;
+	transform:translateX(-50%);
+	border-top-right-radius:80px;
+	border-top-left-radius:80px;
+	z-index:1;
+	}
+	
+	.face{
+	background-color:var(--skin-color);
+	width:70px;
+	height:80px;
+	position:absolute;
+	top:70px;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:3;
+	border-radius:0 0 80px 80px;
+	}
+	.face::before {
+		content:"" ;
+		background-color:var(--hair-color);
+		width:60px;
+		height :40px;
+		position :absolute;
+		top:-24px;
+		left:-5px;
+		border-radius:50%;
+		box-shadow:40px 10px 0 -8px var(--hair-color);
+		}
+		
+.eye{
+	background-color:var(--hair-color);
+	width:10px;
+	height:10px;
+	position:absolute;
+	top:27px;
+	left:8px;
+	box-shadow:42px  0 0 var(--hair-color);
+	border-radius: 50%;
+	}
+.eye::before {
+	content:"" ;
+		background-color:#626f7d;
+		width:12px;
+		height :2px;
+		position :absolute;
+		top:-5px;
+		left:-1px;
+		border-radius:10px;
+		box-shadow:42px 0 0 #626f7d ;
+	}
+	
+.nose{
+	background-color:#db9b99;
+	width:8px;
+	height:16px;
+	position:absolute;
+	top:28px;
+	left:50%;
+	transform:translateX(-50%);
+	border-radius:12px;
+	}
+	
+.mouth{
+	background-color:var(--hair-color);
+	width:28px;
+	height:14px;
+	position:absolute;
+	top:52px;
+	left:50%;
+	transform:translateX(-50%);
+	overflow:hidden;
+	border-radius:0 0 20px 20px;
+	}
+
+.mouth::before {
+	content:"" ;
+		background-color:#f6828c;
+		width:24px;
+		height :20px;
+		position :absolute;
+		top:5px;
+		left:2px;
+		border-radius:50%;
+	}
+	
+.cheek{
+	background-color:#eba8a8;
+	width:7px;
+	height:7px;
+	position:absolute;
+	bottom:30px;
+	left :5px;
+	border-radius:50%;
+	box-shadow:48px 0 0 #eba8a8 ;
+}
+.neck{
+	background-color:var(--skin-color);
+	width:27px;
+	height:25px;
+	position:absolute;
+	bottom :-12px;
+	left:50%;
+	transform:translateX(-50%);
+	border-radius:50px;
+	
+	}
+	
+.body{
+	background-color:#bb004f;
+	width:98px;
+	height:90px;
+	position:absolute;
+	bottom : -21px;
+	left:50%;
+	z-index:2;
+	transform:translateX(-50%);
+	border-radius:50px 50px 0 0;
+	}
