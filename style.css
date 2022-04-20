@@ -114,6 +114,38 @@ eye1::before {
 		box-shadow:42px 0 0 #626f7d ;
 	}
 	*/
+
+.eye,.eye1{
+                height:7px;
+                position:absolute;
+                top:27px;
+                border-radius: 50%;
+                }
+
+            .eye1{
+                background-color:#626f7d;
+                width:7px;
+                left:10px;
+                box-shadow:42px  0 0 #626f7d;
+                }
+
+            .eye{
+                background-color:#FFFFFF;
+                width:15px;
+                left:6px;
+                box-shadow:42px  0 0 #FFFFFF;
+                }
+            .eye::before,eye1::before  {
+                content:"" ;
+                    background-color:#626f7d;
+                    width:16px;
+                    height :2px;
+                    position :absolute;
+                    top:-5px;
+                    left:-1px;
+                    border-radius:10px;
+                    box-shadow:42px 0 0 #626f7d ;
+                }
 	
 .nose{
 	background-color:#db9b99;
